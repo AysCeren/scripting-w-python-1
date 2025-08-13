@@ -54,6 +54,7 @@ def compile_game_code(path):
         return
     
     command = GAME_COMPILE_COMMAND + [code_file_name]
+    run_command(command, path)
 def run_command(command, path):
     cwd = os.getcwd()
     os.chdir(path)
